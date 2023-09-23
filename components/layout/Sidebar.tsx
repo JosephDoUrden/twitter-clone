@@ -1,22 +1,25 @@
 import { BsHouseFill, BsBellFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
+import { BiLogOut } from "react-icons/bi";
 
 import SidebarLogo from "./SidebarLogo";
+import SidebarItem from "./SidebarItem";
+import SidebarTweetButton from "./SidebarTweetButton";
 
 const Sidebar = () => {
   const items = [
     {
-      name: "Home",
+      label: "Home",
       href: "/",
       icon: BsHouseFill,
     },
     {
-      name: "Notifications",
+      label: "Notifications",
       href: "/notifications",
       icon: BsBellFill,
     },
     {
-      name: "Profile",
+      label: "Profile",
       href: "/user/123",
       icon: FaUser,
     },
@@ -26,6 +29,16 @@ const Sidebar = () => {
       <div className="flex flex-col items-end"></div>
       <div className="space-y-2 lg:w-[230px]">
         <SidebarLogo />
+        {items.map((item) => (
+          <SidebarItem
+            key={item.href}
+            href={item.href}
+            label={item.label}
+            icon={item.icon}
+          />
+        ))}
+        <SidebarItem onClick={() => {}} icon={BiLogOut} label="Logout" />
+        <SidebarTweetButton />
       </div>
     </div>
   );
