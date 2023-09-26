@@ -1,3 +1,7 @@
+# Twitter Clone
+
+![Gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWFydTh4MzlmYmg5bTVuYjJidHY2c3A1dm40NGxxM2Qwenl1dWQ2dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/X8zEerXZaq3Rk5Vqy9/giphy.gif)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -24,17 +28,15 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
+If you have any questions, feedback, or would like to connect, feel free to reach out to me.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Name:** Yusufhan Saçak
+- **Email:** [yusufhan.sacak@bahcesehir.edu.tr](mailto:yusufhan.sacak@bahcesehir.edu.tr)
+- **Medium:** [My Medium Profile](https://medium.com/@yusufhansacak)
+- **Twitter:** [@0xSCK](https://twitter.com/0xSCK)
+- **LinkedIn:** [Yusufhan Saçak](https://www.linkedin.com/in/yusufhansacak/)
+- **Website:** [yusufhan.dev](https://yusufhan.dev/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to contact me through any of the channels above. I'm open to collaborations and discussions related to Flutter development or any other projects.
