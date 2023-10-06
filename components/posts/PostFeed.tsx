@@ -7,7 +7,7 @@ interface PostFeedProps {
 }
 
 const PostFeed: React.FC<PostFeedProps> = ({ userId }) => {
-  const { data: posts = [] } = usePosts();
+  const { data: posts = [] } = usePosts(userId);
 
   return (
     <>
