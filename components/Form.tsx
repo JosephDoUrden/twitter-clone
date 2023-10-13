@@ -30,7 +30,9 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
     try {
       setIsLoading(true);
 
-      await axios.post("/api/posts", { body });
+      const url = isComment ? `/api/comments?postId=${postId}` : "/api/posts";
+
+      await axios.post(url, { body });
 
       toast.success("Posted!");
 
@@ -42,7 +44,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
     } finally {
       setIsLoading(false);
     }
-  }, [body, mutatePosts]);
+  }, [body, isComment, mutatePosts, postId]);
 
   return (
     <div className="border-b-[1px] border-neutral-800 px-5 py-2">
