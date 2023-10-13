@@ -6,6 +6,7 @@ import useCurrentUser from "@/hooks/useCurrentUser";
 import useLoginModal from "@/hooks/useLoginModal";
 import usePosts from "@/hooks/usePosts";
 import useRegisterModal from "@/hooks/useRegisterModal";
+import usePost from "@/hooks/usePost";
 
 import Button from "./Button";
 import Avatar from "./Avatar";
@@ -22,6 +23,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
 
   const { data: currentUser } = useCurrentUser();
   const { mutate: mutatePosts } = usePosts();
+  const { mutate: mutatePost } = usePost(postId as string); // mutatePost is used to update the post after a comment is posted
 
   const [body, setBody] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -39,12 +41,13 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
       setBody("");
 
       mutatePosts();
+      mutatePost();
     } catch (error) {
       toast.error("Something went wrong");
     } finally {
       setIsLoading(false);
     }
-  }, [body, isComment, mutatePosts, postId]);
+  }, [body, isComment, mutatePost, mutatePosts, postId]);
 
   return (
     <div className="border-b-[1px] border-neutral-800 px-5 py-2">
