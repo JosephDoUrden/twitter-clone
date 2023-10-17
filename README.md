@@ -1,38 +1,48 @@
 # Twitter Clone
 
-![Gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWFydTh4MzlmYmg5bTVuYjJidHY2c3A1dm40NGxxM2Qwenl1dWQ2dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/X8zEerXZaq3Rk5Vqy9/giphy.gif)
+![image](twitter-clone.png)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Live Demo: <https://twitter-clone-lilac-rho.vercel.app/>
+
+## Overview
+
+This project is a Twitter clone built with Next.js, a popular React framework. It allows users to create, read, and interact with tweets, just like the real Twitter. Here's a brief guide to get you started with this project.
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
+```
+git clone https://github.com/JosephDoUrden/twitter-clone.git
+cd twitter-clone
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Variables
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Create a `.env` file in the root directory of the project. Add the following environment variables to the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+DATABASE_URL="mongodb+srv://<username>:<password>@twitter-clone.6vg2ryl.mongodb.net/test?retryWrites=true&w=majority"
+NEXTAUTH_JWT_SECRET="NEXT_AUTH_JWT_SECRET"
+NEXTAUTH_SECRET="NEXT_AUTH_SECRET"
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [x] Create a tweet
+- [x] Read tweets
+- [x] Like a tweet
+- [x] Reply to a tweet
+- [x] Delete a tweet
+- [x] Follow a user
+- [x] Unfollow a user
+- [x] View user profile
+- [x] View user tweets
 
 ## Contact
 
 If you have any questions, feedback, or would like to connect, feel free to reach out to me.
 
-- **Name:** Yusufhan Saçak
+- **Name:** Yusufhan Sacak
 - **Email:** [yusufhan.sacak@bahcesehir.edu.tr](mailto:yusufhan.sacak@bahcesehir.edu.tr)
 - **Medium:** [My Medium Profile](https://medium.com/@yusufhansacak)
 - **Twitter:** [@0xSCK](https://twitter.com/0xSCK)
